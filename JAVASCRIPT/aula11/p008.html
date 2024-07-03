@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>País de Origem:</h1>
+    Digite o país: <input type="text" name="paisorigem" id="paisorigem">
+    <input type="button" value="Verificar" onclick="verificar()">
+
+    <!--div vazia onde vai aparecer os resultados-->
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        //Início da função
+        function verificar(){
+            //atribuindo o valor do input "paisorigem" para variável "país"
+            var país = window.document.querySelector('input#paisorigem')
+            //atribuindo o valor da div "res" para variável "res"
+            var res = window.document.querySelector('div#res')
+            //Convertendo valor da variável "país" para String e atribuindo para a variável "vel"
+            vel = String(país.value)
+
+            //reescrevendo arquivo html em res
+            res.innerHTML = `<p>O país digitado foi <strong>${vel}</strong><p>`
+            //se o valor da string em "vel" for diferente de "Brasil"
+            if(vel != 'Brasil'){
+                //+= para incrementar mais texto
+                res.innerHTML += `<p>Você é um <strong>estrangeiro!</strong></p>`
+            }else{ //se não
+                res.innerHTML += `<p>Você é <strong>Brasileiro!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
