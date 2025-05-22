@@ -1,2 +1,2 @@
 # Estudo de JavaScript
- Disponibilizados alguns códigos e anotações realizadas durante o curso de aprendizagem sobre programação básica JavaScript no Curso em Vídeo do Gustavo Guanabara.
+ Disponibilizados os códigos e anotações realizados durante as aulas do curso de Javascript do Gustavo Guanabara.
